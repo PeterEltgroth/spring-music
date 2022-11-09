@@ -43,6 +43,10 @@ dependencies {
     implementation "org.webjars:angular-ui-bootstrap:0.10.0-1"
     implementation "org.webjars:jquery:2.1.0-2"
 
+    // REST api docs at: http://localhost:8080/v3/api-docs
+    // Swagger UI at: http://localhost:8080/swagger-ui/index.html
+	implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
+    
     // Oracle - uncomment one of the following after placing driver in ./libs
     // compile files('libs/ojdbc8.jar')
     // compile files('libs/ojdbc7.jar')
