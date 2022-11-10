@@ -1,11 +1,11 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: spring-music
+  name: spring-music2
   labels:
     apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: web
-    app.kubernetes.io/part-of: spring-music
+    app.kubernetes.io/part-of: spring-music2
     apis.apps.tanzu.vmware.com/register-api: "true"
 spec:
   params:
@@ -16,12 +16,13 @@ spec:
     value:
       type: openapi # We currently support openapi, aysncapi, graphql, grpc
       location:
+        baseURL: http://spring-music2.default.run.apps.tap.nycpivot.com
         path: "/v3/api-docs"  # The path to the api documentation
-      system: spring-music
+      system: spring-music2
       owner: default-team   # The team that owns this
       description: "A set of API endpoints to manage the resources within the spring-music app."
   source:
     git:
       url: https://github.com/PeterEltgroth/spring-music.git
       ref:
-        branch: tap1.3
+        branch: sm2

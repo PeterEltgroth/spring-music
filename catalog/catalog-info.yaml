@@ -1,17 +1,17 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: spring-music
+  name: spring-music2
   description: Spring Music Web App
   tags:
-    - app-accelerator
     - java
     - spring
     - web
-    - tanzu
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-music'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-music2'
 spec:
   type: service
   lifecycle: experimental
   owner: default-team
+  providesApis:
+  - spring-music2
