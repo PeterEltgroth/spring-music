@@ -14,7 +14,7 @@ spec:
       autoscaling.knative.dev/minScale: "1"
   - name: api_descriptor
     value:
-      type: openapi # We currently support openapi, aysncapi, graphql, grpc
+      type: openapi # One of openapi, aysncapi, graphql, grpc
       location:
         path: "/v3/api-docs"  # The path to the api documentation
       system: spring-music
