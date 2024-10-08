@@ -3,6 +3,8 @@
 *.ids
 *.iws
 .idea/
+.vscode/
+bin/
 
 .project
 .metadata
